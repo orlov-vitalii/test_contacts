@@ -1,0 +1,23 @@
+<form (ngSubmit)="submitForm()">
+  <div>
+    <label for="name">Name</label>
+    <input
+      id="name"
+      name="name"
+      [(ngModel)]="name"
+      placeholder="Enter name"
+    />
+  </div>
+
+  <div>
+    <label for="phone">Phone</label>
+    <input
+      id="phone"
+      name="phone"
+      [(ngModel)]="phone"
+      placeholder="Enter phone"
+    />
+  </div>
+
+  <button type="submit" class="add-btn">Create contact</button>
+</form>

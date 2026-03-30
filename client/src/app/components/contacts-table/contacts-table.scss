@@ -1,0 +1,25 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #dcdcdc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+}
+
+.delete-btn {
+  background-image: url(../../../assets/images/delete.png);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}

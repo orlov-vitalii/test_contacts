@@ -1,0 +1,27 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for(contact of contacts; track contact.id) {
+      <tr>
+      <td>{{ contact.id }}</td>
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.phone }}</td>
+      <td>
+        <div class="delete-btn" (click)="onDelete(contact.id)"></div>
+      </td>
+      </tr>
+    } @empty {
+        <tr>
+        <td colspan="4">No users yet.</td>
+        </tr>
+    }
+  </tbody>
+</table>

@@ -1,0 +1,7 @@
+<header>
+  <h1>Contacts</h1>
+</header>
+
+<app-contacts-form (createContact)="onCreateContact($event)"></app-contacts-form>
+
+<app-contacts-table (deleteContact)="onDeleteContact($event)" [contacts]="contacts"></app-contacts-table>
